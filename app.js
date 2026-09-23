@@ -20,14 +20,16 @@ fetch('data.json').then(r => r.json()).then(data => {
       : `<span class="logo-fallback" style="background:${esc(m.creatorColor)}"></span>`;
     li.innerHTML = `
       <div class="rank ${rank <= 3 ? 'top' : ''}">${rank}</div>
-      <div class="head">${logo}
-        <a class="model-name" href="${esc(m.url)}" target="_blank" rel="noopener">${esc(m.name)}</a>
-        ${m.isOpenWeights ? '<span class="badge-open">开源</span>' : ''}
+      <div class="body">
+        <div class="model-line">
+          <a class="model-name" href="${esc(m.url)}" target="_blank" rel="noopener">${esc(m.name)}</a>
+          ${m.isOpenWeights ? '<span class="badge-open">开源</span>' : ''}
+        </div>
+        <div class="meta">
+          <span class="creator">${logo}${esc(m.creator)}</span>
+        </div>
       </div>
-      <div class="meta">
-        <span class="creator">${esc(m.creator)}</span>
-        <span class="ii-val">${m.ii.toFixed(1)}</span>
-      </div>`;
+      <span class="ii-val">${m.ii.toFixed(1)}</span>`;
     frag.appendChild(li);
   });
   board.replaceChildren(frag);

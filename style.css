@@ -29,40 +29,36 @@ main { max-width: 720px; margin: 12px auto 40px; padding: 0 12px; }
 
 #board { list-style: none; display: flex; flex-direction: column; gap: 8px; }
 
-/* 卡片布局：第一行 logo+模型名（排名放行首），第二行 左=厂商 右=分数 */
 .row {
   display: grid;
-  grid-template-columns: 30px 1fr;
-  grid-template-areas:
-    "rank head"
-    ".    meta";
-  column-gap: 10px; row-gap: 5px;
-  background: var(--card); border: 1px solid var(--border); border-radius: 12px;
+  grid-template-columns: 26px 1fr auto;
+  align-items: center;
+  gap: 10px;
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 10px;
   padding: 12px 14px;
+  transition: background .15s;
 }
 .row:hover { background: var(--hover); }
 
-.rank {
-  grid-area: rank;
-  font-size: 15px; font-weight: 700; color: var(--muted);
-  font-variant-numeric: tabular-nums; text-align: center; align-self: center;
-}
-.rank.top { color: #b45309; }
+.rank { font-weight: 700; font-size: 15px; color: var(--muted); text-align: center; font-variant-numeric: tabular-nums; }
+.rank.top { color: var(--accent); }
 
-.head { grid-area: head; display: flex; align-items: center; gap: 8px; min-width: 0; }
-.logo {
-  width: 22px; height: 22px; border-radius: 5px; object-fit: contain; flex: none;
-  background: #fff; border: 1px solid var(--border);
-}
-.logo-fallback { width: 22px; height: 22px; border-radius: 5px; flex: none; }
+.body { display: flex; flex-direction: column; gap: 4px; min-width: 0; }
+.model-line { display: flex; align-items: center; gap: 8px; min-width: 0; }
 .model-name {
   font-weight: 600; font-size: 15px; color: var(--text);
   text-decoration: none; overflow-wrap: anywhere; line-height: 1.3; min-width: 0;
 }
 .model-name:hover { color: var(--accent); }
 
-.meta { grid-area: meta; display: flex; align-items: center; justify-content: space-between; gap: 10px; padding-left: 30px; }
-.creator { color: var(--muted); font-size: 13px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.meta { display: flex; align-items: center; gap: 6px; }
+.creator { display: inline-flex; align-items: center; gap: 6px; color: var(--muted); font-size: 13px; }
+
+.logo { width: 18px; height: 18px; border-radius: 4px; object-fit: contain; flex: none; background: #fff; border: 1px solid var(--border); }
+.logo-fallback { width: 18px; height: 18px; border-radius: 4px; flex: none; display: inline-block; }
+
 .ii-val { font-size: 16px; font-weight: 700; font-variant-numeric: tabular-nums; flex: none; }
 
 .badge-open {
@@ -73,6 +69,5 @@ main { max-width: 720px; margin: 12px auto 40px; padding: 0 12px; }
 .footnote { color: var(--muted); font-size: 12px; margin-top: 12px; line-height: 1.7; text-align: center; }
 
 @media (min-width: 480px) {
-  .row { padding: 14px 16px; grid-template-columns: 34px 1fr; }
-  .meta { padding-left: 34px; }
+  .row { padding: 14px 16px; grid-template-columns: 30px 1fr auto; }
 }
