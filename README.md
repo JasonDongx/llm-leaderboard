@@ -27,7 +27,7 @@
 #    https://artificialanalysis.ai/models 页面源码中搜索 "/data/xxx.txt"
 # 2. 更新 decrypt.mjs 中的文件名与 key，然后：
 node decrypt.mjs    # 解密 aa_raw.txt -> aa_data.json
-node process.mjs    # 生成 site/data.json
+node process.mjs    # 生成 data.json
 ```
 
 ## 部署
