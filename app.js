@@ -3,7 +3,6 @@ const AA = 'https://artificialanalysis.ai';
 const board = document.getElementById('board');
 const updatedEl = document.getElementById('updated');
 const TOP_N = 20;
-const MAX_II = 60;
 
 function esc(s) {
   return String(s).replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
@@ -21,16 +20,13 @@ fetch('data.json').then(r => r.json()).then(data => {
       : `<span class="logo-fallback" style="background:${esc(m.creatorColor)}"></span>`;
     li.innerHTML = `
       <div class="rank ${rank <= 3 ? 'top' : ''}">${rank}</div>
-      <div class="main">
-        <div class="model-line">${logo}
-          <a class="model-name" href="${esc(m.url)}" target="_blank" rel="noopener">${esc(m.name)}</a>
-          ${m.isOpenWeights ? '<span class="badge-open">开源</span>' : ''}
-        </div>
-        <div class="creator-line">${esc(m.creator)}</div>
+      <div class="head">${logo}
+        <a class="model-name" href="${esc(m.url)}" target="_blank" rel="noopener">${esc(m.name)}</a>
+        ${m.isOpenWeights ? '<span class="badge-open">开源</span>' : ''}
       </div>
-      <div class="score">
+      <div class="meta">
+        <span class="creator">${esc(m.creator)}</span>
         <span class="ii-val">${m.ii.toFixed(1)}</span>
-        <span class="ii-bar-bg"><span class="ii-bar" style="width:${Math.min(100, m.ii / MAX_II * 100)}%"></span></span>
       </div>`;
     frag.appendChild(li);
   });
