@@ -1,0 +1,11 @@
+import crypto from 'crypto';
+import fs from 'fs';
+import zlib from 'zlib';
+const key = Buffer.from('71cdec8cf1c103075a8a4996dc388e132a693823fef9188ac8139e36cf6b0322','hex');
+const iv = crypto.createHash('sha256').update(key).digest().subarray(0,12);
+const data = fs.readFileSync('aa_raw.txt');
+const dec = crypto.createDecipheriv('aes-256-gcm', key, iv);
+dec.setAuthTag(data.subarray(data.length-16));
+const out = Buffer.concat([dec.update(data.subarray(0,data.length-16)), dec.final()]);
+fs.writeFileSync('aa_data.json', zlib.gunzipSync(out));
+console.log('ok', out.length);

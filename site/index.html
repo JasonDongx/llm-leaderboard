@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>大模型智能排行榜 · 基于 Artificial Analysis</title>
+<link rel="stylesheet" href="style.css">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🏆</text></svg>">
+</head>
+<body>
+<header>
+  <div class="header-inner">
+    <div>
+      <h1>大模型智能排行榜</h1>
+      <p class="subtitle">数据来源：<a href="https://artificialanalysis.ai/models" target="_blank" rel="noopener">Artificial Analysis</a>
+        · Intelligence Index v4.3.2 · 同一型号仅保留 max 版本 · 更新于 <span id="updated"></span></p>
+    </div>
+    <input id="search" type="search" placeholder="搜索模型 / 厂商…" autocomplete="off">
+  </div>
+  <div class="tabs" id="tabs">
+    <button class="tab active" data-filter="all">全部</button>
+    <button class="tab" data-filter="open">开源权重</button>
+    <button class="tab" data-filter="closed">闭源</button>
+  </div>
+</header>
+
+<main>
+  <table id="board">
+    <thead>
+      <tr>
+        <th class="num sortable" data-key="rank">#</th>
+        <th class="sortable" data-key="name">模型</th>
+        <th class="sortable" data-key="creator">厂商</th>
+        <th class="num sortable col-ii" data-key="ii">智能指数</th>
+        <th class="num sortable" data-key="outputSpeed">输出速度<br><span class="th-sub">tok/s</span></th>
+        <th class="num sortable" data-key="latency">延迟<br><span class="th-sub">秒</span></th>
+        <th class="num sortable" data-key="price">混合价格<br><span class="th-sub">$/M tok</span></th>
+        <th class="num sortable" data-key="contextWindow">上下文<br><span class="th-sub">M tok</span></th>
+        <th class="num sortable" data-key="releaseDate">发布日期</th>
+      </tr>
+    </thead>
+    <tbody id="tbody"></tbody>
+  </table>
+  <p class="footnote" id="count"></p>
+</main>
+
+<script src="app.js"></script>
+</body>
+</html>
