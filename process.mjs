@@ -42,5 +42,5 @@ const out = [...byRelease.values()].map(pick).map(m => ({
   url: 'https://artificialanalysis.ai/models/' + m.slug,
 })).sort((a, b) => b.ii - a.ii);
 
-fs.writeFileSync(new URL('./site/data.json', import.meta.url), JSON.stringify(out, null, 1));
+fs.writeFileSync(new URL('./data.json', import.meta.url), JSON.stringify(out, null, 1));
 console.log('models:', out.length, '| top5:', out.slice(0, 5).map(m => `${m.name}(${m.ii})`).join(', '));

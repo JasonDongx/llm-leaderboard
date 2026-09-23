@@ -32,4 +32,4 @@ node process.mjs    # 生成 site/data.json
 
 ## 部署
 
-纯静态站点（`site/` 目录），直接在 Vercel 导入本仓库即可，无需构建。
+纯静态站点（），直接在 Vercel 导入本仓库即可，无需构建。
