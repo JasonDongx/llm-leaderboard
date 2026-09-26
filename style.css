@@ -29,7 +29,19 @@ h1 a:hover { color: var(--accent); }
 
 main { margin: 0; padding: 0; }
 
+.tabs {
+  display: flex; background: var(--bg); border-bottom: 1px solid var(--border);
+}
+.tab {
+  flex: 1; padding: 10px 0 9px; font-size: 14px; font-weight: 600;
+  color: var(--muted); background: none; border: none; cursor: pointer;
+  border-bottom: 2px solid transparent; margin-bottom: -1px; font-family: inherit;
+}
+.tab.active { color: var(--text); border-bottom-color: var(--accent); }
+.tab:active { background: var(--hover); }
+
 #board { list-style: none; display: flex; flex-direction: column; }
+.meta .dot { color: var(--border); font-size: 12px; }
 
 .row {
   display: grid;
@@ -53,7 +65,7 @@ main { margin: 0; padding: 0; }
 }
 .model-name:hover { color: var(--accent); }
 
-.meta { display: flex; align-items: center; gap: 6px; }
+.meta { display: flex; align-items: center; gap: 6px; color: var(--muted); font-size: 13px; font-variant-numeric: tabular-nums; }
 .creator { display: inline-flex; align-items: center; gap: 6px; color: var(--muted); font-size: 13px; }
 
 .logo { width: 18px; height: 18px; border-radius: 4px; object-fit: contain; flex: none; background: #fff; border: 1px solid var(--border); }

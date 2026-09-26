@@ -3,19 +3,24 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>大模型智能排行榜 Top 20 · 基于 Artificial Analysis</title>
+<title>大模型排行榜 Top 20 · 智能榜 & WebDev Arena</title>
 <link rel="stylesheet" href="style.css">
 <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🏆</text></svg>">
 </head>
 <body>
 <header>
-  <h1><a href="https://artificialanalysis.ai" target="_blank" rel="noopener">Artificial Analysis</a> 大模型智能排行榜</h1>
-  <p class="subtitle">同一型号仅保留 Max · 更新于 <span id="updated"></span></p>
+  <h1 id="title"><a href="https://artificialanalysis.ai" target="_blank" rel="noopener">Artificial Analysis</a> 大模型智能排行榜</h1>
+  <p class="subtitle" id="subtitle">同一型号仅保留 Max · 更新于 <span id="updated"></span></p>
 </header>
+
+<nav class="tabs">
+  <button class="tab active" data-tab="ii" type="button">智能榜</button>
+  <button class="tab" data-tab="webdev" type="button">WebDev Arena</button>
+</nav>
 
 <main>
   <ol id="board"></ol>
-  <p class="footnote">智能指数为 Artificial Analysis Intelligence Index（10 项评测综合分，越高越好）· 点击模型名可查看 AA 详情</p>
+  <p class="footnote" id="footnote">智能指数为 Artificial Analysis Intelligence Index（10 项评测综合分，越高越好）· 点击模型名可查看 AA 详情</p>
 </main>
 
 <script src="app.js"></script>
