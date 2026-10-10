@@ -1,7 +1,7 @@
 import crypto from 'crypto';
 import fs from 'fs';
 import zlib from 'zlib';
-const key = Buffer.from('71cdec8cf1c103075a8a4996dc388e132a693823fef9188ac8139e36cf6b0322','hex');
+const key = Buffer.from('fdc52def5c9eb0f8b4e178b4b734b394fb646ed73b1d528f9425a000239872f3','hex');
 const iv = crypto.createHash('sha256').update(key).digest().subarray(0,12);
 const data = fs.readFileSync('aa_raw.txt');
 const dec = crypto.createDecipheriv('aes-256-gcm', key, iv);
