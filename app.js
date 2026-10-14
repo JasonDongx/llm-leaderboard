@@ -25,6 +25,7 @@ const LOGOS = {
   'xiaomi': 'logos/xiaomi.svg',
   'tencent': 'logos/tencent.svg',
   'stepfun': 'logos/stepfun.svg',
+  'inclusionai': 'logos/inclusionai.jpg',
 };
 
 const TABS = {
