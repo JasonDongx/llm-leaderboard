@@ -50,16 +50,6 @@
   "publishDate": "2026-10-13"
  },
  {
-  "name": "Claude-Sonnet-5.5-High",
-  "model_name": "claude-sonnet-5.5-high",
-  "org": "Anthropic",
-  "rating": 1713,
-  "ci": 10,
-  "votes": 4605,
-  "isOpen": false,
-  "publishDate": "2026-10-13"
- },
- {
   "name": "Claude-Opus-5-Max",
   "model_name": "claude-opus-5-max",
   "org": "Anthropic",
@@ -116,16 +106,6 @@
   "rating": 1659,
   "ci": 8,
   "votes": 8683,
-  "isOpen": false,
-  "publishDate": "2026-10-13"
- },
- {
-  "name": "Claude-Opus-5-High",
-  "model_name": "claude-opus-5-high",
-  "org": "Anthropic",
-  "rating": 1658,
-  "ci": 6,
-  "votes": 23519,
   "isOpen": false,
   "publishDate": "2026-10-13"
  },
@@ -196,6 +176,26 @@
   "rating": 1625,
   "ci": 10,
   "votes": 4383,
+  "isOpen": true,
+  "publishDate": "2026-10-13"
+ },
+ {
+  "name": "Claude-Fable-5-High",
+  "model_name": "claude-fable-5-high",
+  "org": "Anthropic",
+  "rating": 1624,
+  "ci": 6,
+  "votes": 15295,
+  "isOpen": false,
+  "publishDate": "2026-10-13"
+ },
+ {
+  "name": "GLM-5.3-Max",
+  "model_name": "glm-5.3-max",
+  "org": "Z.ai",
+  "rating": 1621,
+  "ci": 8,
+  "votes": 9125,
   "isOpen": true,
   "publishDate": "2026-10-13"
  }

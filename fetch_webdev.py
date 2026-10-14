@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 # 从 HF lmarena-ai/leaderboard-dataset 抓取 WebDev Arena 最新榜单，生成 webdev.json
 # 用法: python3 fetch_webdev.py   (默认走 hf-mirror.com，原站可达可加 --hf)
-import json, sys, subprocess
+import json, re, sys, subprocess
 import pandas as pd
 
 URL_HF = "https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/resolve/main/webdev/latest-00000-of-00001.parquet"
@@ -35,9 +35,23 @@ def main():
     url = URL_HF if '--hf' in sys.argv else URL_MIRROR
     subprocess.run(['curl', '-sL', '-m', '60', url, '-o', PARQUET], check=True)
     df = pd.read_parquet(PARQUET)
-    df = df[df.category == 'overall'].sort_values('rank').head(TOP_N)
-    out = []
+    df = df[df.category == 'overall'].sort_values('rank')
+
+    # 同一型号不同 effort 档位只保留一个：优先 max，其次评分最高的变体
+    # 档位后缀两种写法都处理：muse-spark-1.3-max / muse-spark-1.3 (xHigh)
+    EFFORT = re.compile(r'(?:-|\s*\()\s*(max|xhigh|high|medium|low|minimal)\s*\)?$', re.I)
+    by_base = {}
     for _, m in df.iterrows():
+        base = EFFORT.sub('', m.model_name.lower()).strip().replace(' ', '-')
+        by_base.setdefault(base, []).append(m)
+    kept = []
+    for base, ms in by_base.items():
+        maxes = [m for m in ms if EFFORT.search(m.model_name.lower()) and 'max' in EFFORT.search(m.model_name.lower()).group(1).lower()]
+        kept.append(max(maxes if maxes else ms, key=lambda m: m.rating))
+    df = sorted(kept, key=lambda m: m['rank'])[:TOP_N]
+
+    out = []
+    for m in df:
         ci = (m.rating_upper - m.rating_lower) / 2
         out.append({
             'name': prettify(m.model_name),
