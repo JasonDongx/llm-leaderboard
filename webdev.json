@@ -3,81 +3,81 @@
   "name": "Claude-Opus-5.5-Max",
   "model_name": "claude-opus-5.5-max",
   "org": "Anthropic",
-  "rating": 1813,
+  "rating": 1811,
   "ci": 15,
-  "votes": 2294,
+  "votes": 2597,
   "isOpen": false,
-  "publishDate": "2026-10-08"
+  "publishDate": "2026-10-13"
  },
  {
   "name": "GPT-6-Astra-Max",
   "model_name": "gpt-6-astra-max",
   "org": "OpenAI",
-  "rating": 1786,
+  "rating": 1780,
   "ci": 11,
-  "votes": 5189,
+  "votes": 5746,
   "isOpen": false,
-  "publishDate": "2026-10-08"
+  "publishDate": "2026-10-13"
  },
  {
   "name": "Claude-Sonnet-5.5-xHigh",
   "model_name": "claude-sonnet-5.5-xhigh",
   "org": "Anthropic",
   "rating": 1774,
-  "ci": 15,
-  "votes": 2323,
+  "ci": 14,
+  "votes": 2858,
   "isOpen": false,
-  "publishDate": "2026-10-08"
+  "publishDate": "2026-10-13"
  },
  {
   "name": "GPT-6.1-Sol-Max",
   "model_name": "gpt-6.1-sol-max",
   "org": "OpenAI",
-  "rating": 1755,
-  "ci": 15,
-  "votes": 2102,
+  "rating": 1760,
+  "ci": 14,
+  "votes": 2592,
   "isOpen": false,
-  "publishDate": "2026-10-08"
+  "publishDate": "2026-10-13"
  },
  {
   "name": "Claude-Fable-5.1-Max",
   "model_name": "claude-fable-5.1-max",
   "org": "Anthropic",
-  "rating": 1744,
+  "rating": 1743,
   "ci": 9,
-  "votes": 6663,
+  "votes": 7230,
   "isOpen": false,
-  "publishDate": "2026-10-08"
+  "publishDate": "2026-10-13"
  },
  {
   "name": "Claude-Sonnet-5.5-High",
   "model_name": "claude-sonnet-5.5-high",
   "org": "Anthropic",
-  "rating": 1715,
-  "ci": 11,
-  "votes": 3984,
+  "rating": 1713,
+  "ci": 10,
+  "votes": 4605,
   "isOpen": false,
-  "publishDate": "2026-10-08"
+  "publishDate": "2026-10-13"
  },
  {
   "name": "Claude-Opus-5-Max",
   "model_name": "claude-opus-5-max",
   "org": "Anthropic",
-  "rating": 1691,
+  "rating": 1690,
   "ci": 6,
-  "votes": 17320,
+  "votes": 17934,
   "isOpen": false,
-  "publishDate": "2026-10-08"
+  "publishDate": "2026-10-13"
  },
  {
   "name": "GPT-6-Sol-Max",
   "model_name": "gpt-6-sol-max",
   "org": "OpenAI",
-  "rating": 1688,
-  "ci": 12,
-  "votes": 3407,
+  "rating": 1686,
+  "ci": 11,
+  "votes": 4032,
   "isOpen": false,
-  "publishDate": "2026-10-08"
+  "publishDate": "2026-10-13"
  },
  {
   "name": "Gemini-4-Argon-High",
@@ -85,19 +85,19 @@
   "org": "Google",
   "rating": 1678,
   "ci": 15,
-  "votes": 1771,
+  "votes": 1772,
   "isOpen": false,
-  "publishDate": "2026-10-08"
+  "publishDate": "2026-10-13"
  },
  {
   "name": "Qwen3.8-Max-0902",
   "model_name": "qwen3.8-max-0902",
   "org": "Alibaba",
-  "rating": 1674,
-  "ci": 8,
-  "votes": 11182,
+  "rating": 1673,
+  "ci": 7,
+  "votes": 13081,
   "isOpen": false,
-  "publishDate": "2026-10-08"
+  "publishDate": "2026-10-13"
  },
  {
   "name": "Qwen3.8-Max",
@@ -105,59 +105,69 @@
   "org": "Alibaba",
   "rating": 1672,
   "ci": 12,
-  "votes": 3446,
+  "votes": 3448,
   "isOpen": false,
-  "publishDate": "2026-10-08"
- },
- {
-  "name": "Claude-Opus-5-High",
-  "model_name": "claude-opus-5-high",
-  "org": "Anthropic",
-  "rating": 1657,
-  "ci": 6,
-  "votes": 22340,
-  "isOpen": false,
-  "publishDate": "2026-10-08"
+  "publishDate": "2026-10-13"
  },
  {
   "name": "Muse-Spark-1.3-Max",
   "model_name": "muse-spark-1.3-max",
   "org": "Meta",
-  "rating": 1657,
+  "rating": 1659,
   "ci": 8,
-  "votes": 7886,
+  "votes": 8683,
   "isOpen": false,
-  "publishDate": "2026-10-08"
+  "publishDate": "2026-10-13"
+ },
+ {
+  "name": "Claude-Opus-5-High",
+  "model_name": "claude-opus-5-high",
+  "org": "Anthropic",
+  "rating": 1658,
+  "ci": 6,
+  "votes": 23519,
+  "isOpen": false,
+  "publishDate": "2026-10-13"
  },
  {
   "name": "Kimi-K3-Max",
   "model_name": "kimi-k3-max",
   "org": "Moonshot AI",
-  "rating": 1654,
+  "rating": 1655,
   "ci": 6,
-  "votes": 17412,
+  "votes": 18644,
   "isOpen": true,
-  "publishDate": "2026-10-08"
+  "publishDate": "2026-10-13"
+ },
+ {
+  "name": "Muse-Wonder-Max",
+  "model_name": "muse-wonder-max",
+  "org": "Meta",
+  "rating": 1651,
+  "ci": 18,
+  "votes": 1228,
+  "isOpen": false,
+  "publishDate": "2026-10-13"
  },
  {
   "name": "Grok-4.7-xHigh",
   "model_name": "grok-4.7-xhigh",
   "org": "xAI",
-  "rating": 1639,
-  "ci": 11,
-  "votes": 3936,
+  "rating": 1640,
+  "ci": 10,
+  "votes": 4633,
   "isOpen": false,
-  "publishDate": "2026-10-08"
+  "publishDate": "2026-10-13"
  },
  {
   "name": "MiMo-V2.6-Flash",
   "model_name": "mimo-v2.6-flash",
   "org": "Xiaomi",
-  "rating": 1637,
+  "rating": 1635,
   "ci": 10,
-  "votes": 4058,
+  "votes": 4693,
   "isOpen": true,
-  "publishDate": "2026-10-08"
+  "publishDate": "2026-10-13"
  },
  {
   "name": "Qwen3.8-Flash-Next",
@@ -165,9 +175,9 @@
   "org": "Alibaba",
   "rating": 1633,
   "ci": 8,
-  "votes": 6932,
+  "votes": 7673,
   "isOpen": true,
-  "publishDate": "2026-10-08"
+  "publishDate": "2026-10-13"
  },
  {
   "name": "Hunyuan4-Preview",
@@ -175,28 +185,18 @@
   "org": "Tencent",
   "rating": 1632,
   "ci": 10,
-  "votes": 4792,
+  "votes": 4808,
   "isOpen": true,
-  "publishDate": "2026-10-08"
+  "publishDate": "2026-10-13"
  },
  {
   "name": "MiMo-V2.6-Pro",
   "model_name": "mimo-v2.6-pro",
   "org": "Xiaomi",
-  "rating": 1629,
-  "ci": 11,
-  "votes": 3649,
+  "rating": 1625,
+  "ci": 10,
+  "votes": 4383,
   "isOpen": true,
-  "publishDate": "2026-10-08"
- },
- {
-  "name": "Muse-Spark-1.3 (xHigh)",
-  "model_name": "muse-spark-1.3 (xHigh)",
-  "org": "Meta",
-  "rating": 1626,
-  "ci": 8,
-  "votes": 7123,
-  "isOpen": false,
-  "publishDate": "2026-10-08"
+  "publishDate": "2026-10-13"
  }
 ]
