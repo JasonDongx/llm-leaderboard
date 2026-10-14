@@ -90,16 +90,6 @@
   "publishDate": "2026-10-13"
  },
  {
-  "name": "Qwen3.8-Max",
-  "model_name": "qwen3.8-max",
-  "org": "Alibaba",
-  "rating": 1672,
-  "ci": 12,
-  "votes": 3448,
-  "isOpen": false,
-  "publishDate": "2026-10-13"
- },
- {
   "name": "Muse-Spark-1.3-Max",
   "model_name": "muse-spark-1.3-max",
   "org": "Meta",
@@ -196,6 +186,16 @@
   "rating": 1621,
   "ci": 8,
   "votes": 9125,
+  "isOpen": true,
+  "publishDate": "2026-10-13"
+ },
+ {
+  "name": "DeepSeek-V4.1-Flash-Max",
+  "model_name": "deepseek-v4.1-flash-max",
+  "org": "DeepSeek",
+  "rating": 1619,
+  "ci": 11,
+  "votes": 3544,
   "isOpen": true,
   "publishDate": "2026-10-13"
  }

@@ -13,7 +13,7 @@
 - 按智能指数降序排列，支持按速度 / 延迟 / 价格 / 上下文等列排序
 - 支持开源权重 / 闭源筛选与模型、厂商搜索
 - WebDev 榜取 overall 分类 Top 20，显示 Elo ±95%CI 与票数
-- WebDev 榜同样执行同型号去重：同一型号的不同 effort 档位（max/xhigh/high/medium/low/minimal）只保留一个——有 max 保留 max，否则保留评分最高变体。注意数据源命名有两种后缀写法：`muse-spark-1.3-max` 和 `muse-spark-1.3 (xHigh)`，去重逻辑需同时兼容（见 fetch_webdev.py 的 EFFORT 正则）
+- WebDev 榜同样执行同型号去重：同一型号的不同 effort 档位（max/xhigh/high/medium/low/minimal）只保留一个——有 max 保留 max，否则保留评分最高变体。注意数据源命名有两种后缀写法：`muse-spark-1.3-max` 和 `muse-spark-1.3 (xHigh)`，去重逻辑需同时兼容（见 fetch_webdev.py 的 EFFORT 正则）；同一型号带 4 位日期后缀的版本（如 qwen3.8-max-0902 vs qwen3.8-max）也视为同型号，保留评分最高者，归组时先剥日期后缀再剥档位后缀
 
 ## 列说明
 

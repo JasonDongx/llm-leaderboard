@@ -39,14 +39,18 @@ def main():
 
     # 同一型号不同 effort 档位只保留一个：优先 max，其次评分最高的变体
     # 档位后缀两种写法都处理：muse-spark-1.3-max / muse-spark-1.3 (xHigh)
+    # 结尾 4 位日期后缀（如 qwen3.8-max-0902）视为同型号版本号，一并归组
     EFFORT = re.compile(r'(?:-|\s*\()\s*(max|xhigh|high|medium|low|minimal)\s*\)?$', re.I)
     by_base = {}
     for _, m in df.iterrows():
-        base = EFFORT.sub('', m.model_name.lower()).strip().replace(' ', '-')
+        base = re.sub(r'-\d{4}$', '', m.model_name.lower()).strip()
+        base = EFFORT.sub('', base).strip().replace(' ', '-')
         by_base.setdefault(base, []).append(m)
     kept = []
     for base, ms in by_base.items():
-        maxes = [m for m in ms if EFFORT.search(m.model_name.lower()) and 'max' in EFFORT.search(m.model_name.lower()).group(1).lower()]
+        maxes = [m for m in ms
+                 if (em := EFFORT.search(re.sub(r'-\d{4}$', '', m.model_name.lower()).strip()))
+                 and em.group(1).lower() == 'max']
         kept.append(max(maxes if maxes else ms, key=lambda m: m.rating))
     df = sorted(kept, key=lambda m: m['rank'])[:TOP_N]
 
