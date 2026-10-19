@@ -40,8 +40,9 @@ def main():
     # 同一型号不同 effort 档位只保留一个：优先 max，其次评分最高的变体
     # 档位后缀两种写法都处理：muse-spark-1.3-max / muse-spark-1.3 (xHigh)
     # 结尾 4 位日期后缀（如 qwen3.8-max-0902）视为同型号版本号，一并归组
+    # 日期后缀写法：-0902 / (0902) / -20260910（4 位或 6-8 位），归组时统一剥掉
     EFFORT = re.compile(r'(?:-|\s*\()\s*(max|xhigh|high|medium|low|minimal)\s*\)?$', re.I)
-    DATE = re.compile(r'(?:-\d{4}|\s*\(\d{4}\))$', re.I)  # -0902 与 (0902) 两种日期后缀
+    DATE = re.compile(r'(?:-\d{4,8}|\s*\(\d{4,8}\))$', re.I)
     by_base = {}
     for _, m in df.iterrows():
         base = DATE.sub('', m.model_name.lower()).strip()
