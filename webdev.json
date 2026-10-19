@@ -1,202 +1,202 @@
 [
  {
-  "name": "Claude-Opus-5.5-Max",
-  "model_name": "claude-opus-5.5-max",
+  "name": "Claude Opus 5.5 (Max)",
+  "model_name": "Claude Opus 5.5 (Max)",
   "org": "Anthropic",
-  "rating": 1811,
-  "ci": 15,
-  "votes": 2597,
-  "isOpen": false,
-  "publishDate": "2026-10-13"
- },
- {
-  "name": "GPT-6-Astra-Max",
-  "model_name": "gpt-6-astra-max",
-  "org": "OpenAI",
-  "rating": 1780,
-  "ci": 11,
-  "votes": 5746,
-  "isOpen": false,
-  "publishDate": "2026-10-13"
- },
- {
-  "name": "Claude-Sonnet-5.5-xHigh",
-  "model_name": "claude-sonnet-5.5-xhigh",
-  "org": "Anthropic",
-  "rating": 1774,
+  "rating": 1807,
   "ci": 14,
-  "votes": 2858,
+  "votes": 2775,
   "isOpen": false,
-  "publishDate": "2026-10-13"
+  "publishDate": "2026-10-16"
  },
  {
-  "name": "GPT-6.1-Sol-Max",
-  "model_name": "gpt-6.1-sol-max",
+  "name": "GPT-6 Astra (Max)",
+  "model_name": "GPT-6 Astra (Max)",
   "org": "OpenAI",
-  "rating": 1760,
-  "ci": 14,
-  "votes": 2592,
+  "rating": 1777,
+  "ci": 10,
+  "votes": 6014,
   "isOpen": false,
-  "publishDate": "2026-10-13"
+  "publishDate": "2026-10-16"
  },
  {
-  "name": "Claude-Fable-5.1-Max",
-  "model_name": "claude-fable-5.1-max",
+  "name": "Claude Sonnet 5.5 (xHigh)",
+  "model_name": "Claude Sonnet 5.5 (xHigh)",
   "org": "Anthropic",
-  "rating": 1743,
+  "rating": 1768,
+  "ci": 13,
+  "votes": 3182,
+  "isOpen": false,
+  "publishDate": "2026-10-16"
+ },
+ {
+  "name": "GPT-6.1 Sol (Max)",
+  "model_name": "GPT-6.1 Sol (Max)",
+  "org": "OpenAI",
+  "rating": 1755,
+  "ci": 13,
+  "votes": 2863,
+  "isOpen": false,
+  "publishDate": "2026-10-16"
+ },
+ {
+  "name": "Claude Fable 5.1 (Max)",
+  "model_name": "Claude Fable 5.1 (Max)",
+  "org": "Anthropic",
+  "rating": 1741,
   "ci": 9,
-  "votes": 7230,
+  "votes": 7503,
   "isOpen": false,
-  "publishDate": "2026-10-13"
+  "publishDate": "2026-10-16"
  },
  {
-  "name": "Claude-Opus-5-Max",
-  "model_name": "claude-opus-5-max",
+  "name": "Claude Opus 5 (Max)",
+  "model_name": "Claude Opus 5 (Max)",
   "org": "Anthropic",
-  "rating": 1690,
+  "rating": 1689,
   "ci": 6,
-  "votes": 17934,
+  "votes": 18310,
   "isOpen": false,
-  "publishDate": "2026-10-13"
+  "publishDate": "2026-10-16"
  },
  {
-  "name": "GPT-6-Sol-Max",
-  "model_name": "gpt-6-sol-max",
+  "name": "GPT-6 Sol (Max)",
+  "model_name": "GPT-6 Sol (Max)",
   "org": "OpenAI",
-  "rating": 1686,
+  "rating": 1683,
   "ci": 11,
-  "votes": 4032,
+  "votes": 4364,
   "isOpen": false,
-  "publishDate": "2026-10-13"
+  "publishDate": "2026-10-16"
  },
  {
-  "name": "Gemini-4-Argon-High",
-  "model_name": "gemini-4-argon-high",
+  "name": "Gemini 4 Argon (High)",
+  "model_name": "Gemini 4 Argon (High)",
   "org": "Google",
   "rating": 1678,
   "ci": 15,
-  "votes": 1772,
+  "votes": 1775,
   "isOpen": false,
-  "publishDate": "2026-10-13"
+  "publishDate": "2026-10-16"
  },
  {
-  "name": "Qwen3.8-Max-0902",
-  "model_name": "qwen3.8-max-0902",
+  "name": "Qwen3.8-Max (0902)",
+  "model_name": "Qwen3.8-Max (0902)",
   "org": "Alibaba",
-  "rating": 1673,
+  "rating": 1674,
   "ci": 7,
-  "votes": 13081,
+  "votes": 13812,
   "isOpen": false,
-  "publishDate": "2026-10-13"
+  "publishDate": "2026-10-16"
  },
  {
-  "name": "Muse-Spark-1.3-Max",
-  "model_name": "muse-spark-1.3-max",
+  "name": "Qwen3.8-Max",
+  "model_name": "Qwen3.8-Max",
+  "org": "Alibaba",
+  "rating": 1672,
+  "ci": 12,
+  "votes": 3440,
+  "isOpen": false,
+  "publishDate": "2026-10-16"
+ },
+ {
+  "name": "Muse Spark 1.3 (Max)",
+  "model_name": "Muse Spark 1.3 (Max)",
   "org": "Meta",
-  "rating": 1659,
+  "rating": 1658,
   "ci": 8,
-  "votes": 8683,
+  "votes": 9068,
   "isOpen": false,
-  "publishDate": "2026-10-13"
+  "publishDate": "2026-10-16"
  },
  {
-  "name": "Kimi-K3-Max",
-  "model_name": "kimi-k3-max",
+  "name": "Kimi K3 (Max)",
+  "model_name": "Kimi K3 (Max)",
   "org": "Moonshot AI",
   "rating": 1655,
   "ci": 6,
-  "votes": 18644,
+  "votes": 19220,
   "isOpen": true,
-  "publishDate": "2026-10-13"
+  "publishDate": "2026-10-16"
  },
  {
-  "name": "Muse-Wonder-Max",
-  "model_name": "muse-wonder-max",
+  "name": "Muse Wonder (Max)",
+  "model_name": "Muse Wonder (Max)",
   "org": "Meta",
-  "rating": 1651,
-  "ci": 18,
-  "votes": 1228,
+  "rating": 1650,
+  "ci": 15,
+  "votes": 1942,
   "isOpen": false,
-  "publishDate": "2026-10-13"
+  "publishDate": "2026-10-16"
  },
  {
-  "name": "Grok-4.7-xHigh",
-  "model_name": "grok-4.7-xhigh",
+  "name": "Grok 4.7 (xHigh)",
+  "model_name": "Grok 4.7 (xHigh)",
   "org": "xAI",
-  "rating": 1640,
+  "rating": 1639,
   "ci": 10,
-  "votes": 4633,
+  "votes": 5021,
   "isOpen": false,
-  "publishDate": "2026-10-13"
+  "publishDate": "2026-10-16"
  },
  {
   "name": "MiMo-V2.6-Flash",
-  "model_name": "mimo-v2.6-flash",
+  "model_name": "MiMo-V2.6-Flash",
   "org": "Xiaomi",
-  "rating": 1635,
+  "rating": 1634,
   "ci": 10,
-  "votes": 4693,
+  "votes": 5016,
   "isOpen": true,
-  "publishDate": "2026-10-13"
+  "publishDate": "2026-10-16"
+ },
+ {
+  "name": "Hy4 Preview",
+  "model_name": "Hy4 preview",
+  "org": "Tencent",
+  "rating": 1631,
+  "ci": 10,
+  "votes": 4802,
+  "isOpen": true,
+  "publishDate": "2026-10-16"
  },
  {
   "name": "Qwen3.8-Flash-Next",
-  "model_name": "qwen3.8-flash-next",
+  "model_name": "Qwen3.8-Flash-Next",
   "org": "Alibaba",
-  "rating": 1633,
+  "rating": 1630,
   "ci": 8,
-  "votes": 7673,
+  "votes": 8083,
   "isOpen": true,
-  "publishDate": "2026-10-13"
- },
- {
-  "name": "Hunyuan4-Preview",
-  "model_name": "hy4-preview",
-  "org": "Tencent",
-  "rating": 1632,
-  "ci": 10,
-  "votes": 4808,
-  "isOpen": true,
-  "publishDate": "2026-10-13"
+  "publishDate": "2026-10-16"
  },
  {
   "name": "MiMo-V2.6-Pro",
-  "model_name": "mimo-v2.6-pro",
+  "model_name": "MiMo-V2.6-Pro",
   "org": "Xiaomi",
   "rating": 1625,
   "ci": 10,
-  "votes": 4383,
+  "votes": 4763,
   "isOpen": true,
-  "publishDate": "2026-10-13"
+  "publishDate": "2026-10-16"
  },
  {
-  "name": "Claude-Fable-5-High",
-  "model_name": "claude-fable-5-high",
+  "name": "Claude Fable 5 (High)",
+  "model_name": "Claude Fable 5 (High)",
   "org": "Anthropic",
-  "rating": 1624,
+  "rating": 1625,
   "ci": 6,
-  "votes": 15295,
+  "votes": 15612,
   "isOpen": false,
-  "publishDate": "2026-10-13"
+  "publishDate": "2026-10-16"
  },
  {
-  "name": "GLM-5.3-Max",
-  "model_name": "glm-5.3-max",
+  "name": "GLM-5.3 (Max)",
+  "model_name": "GLM-5.3 (Max)",
   "org": "Z.ai",
   "rating": 1621,
   "ci": 8,
-  "votes": 9125,
+  "votes": 9542,
   "isOpen": true,
-  "publishDate": "2026-10-13"
- },
- {
-  "name": "DeepSeek-V4.1-Flash-Max",
-  "model_name": "deepseek-v4.1-flash-max",
-  "org": "DeepSeek",
-  "rating": 1619,
-  "ci": 11,
-  "votes": 3544,
-  "isOpen": true,
-  "publishDate": "2026-10-13"
+  "publishDate": "2026-10-16"
  }
 ]
